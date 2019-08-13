@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<style>
+.navbar {
+    overflow: hidden;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<body>
+<div class="navbar">
+  <a href="project.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Manage Your Trips 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="reg.html">Register</a>
+      <a href="ticket_booking_page.html">Ticket Booking</a>
+      
+    </div>
+  </div> 
+  
+  
+  <div class="dropdown">
+    <button class="dropbtn">Travel Information 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="timetable.html">Time Table</a>
+      <a href="travel_ss.html">Before You Fly</a>
+      <a href="instruction.html">Instructions</a>
+	  <a href="baggage.html">Baggage</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Special Offers
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="e-scheme.html">e-Super Saver Scheme</a>
+      
+    </div>
+  </div> 
+  <a href="contact.html">Contact</a>
+</div>
+
+<form name="RegForm" onsubmit="return validate()">		
+<div id="login-box" onsubmit="return validate()">
+	<div class="left-box">
+		<h1>Sign Up</h1>
+			<input type="text" name="name1" placeholder="First Name"/>
+			<input type="text" name="name2" placeholder="Last Name"/>
+			<input type="text" name="username" placeholder="Username"/>
+			<input type="text" name="email" placeholder="Email"/>
+			<input type="password" name="password" placeholder="Password"/>
+			<input type="password" name="password2" placeholder="Retype-Password"/>
+			<input type="submit" name="signup-button" value="Sign Up"/>
+	</div>
+</form>	
+</div>
+<script>
+function validate()
+{
+var name=document.forms["RegForm"]["username"];
+var email=document.forms["RegForm"]["email"];
+var pass=document.forms["RegForm"]["password"];
+if(name.value == "")
+{
+window.alert("Please enter your name.");
+name.focus();
+return false;
+}
+if(email.value == "")
+{
+window.alert("Please enter your E-mail.");
+email.focus();
+return false;
+}
+if(pass.value == "")
+{
+window.alert("Please enter your password.");
+pass.focus();
+return false;
+}
+return true;
+}
+</script>
+</body>
+</html>

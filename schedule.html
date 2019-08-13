@@ -1,0 +1,205 @@
+<html>
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+   
+  position: relative;
+  top: 10;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: red;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+<div class="bg"></div>
+<div class="navbar">
+  <a href="project.html">Home</a>
+  <a href="ticket_booking_page.html">Manage Your Trips</a>
+  <a href="timetable.html">Travel Information</a>
+  <a href="special_offers.html">Special Offers</a>
+  <a href="contact.html">Contact</a>
+  
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: light blue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 10px;
+    background-color:/*rgb(255,235,142)*/rgba(255,99,71,0.5);
+}
+
+
+
+
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid rgb(157,37,69));
+    margin-bottom: 20px;
+}
+
+
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: rgb(255,56,45);
+    color: white;
+    padding: 10px 16px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    opacity: 0.9;
+}
+
+
+
+.registerbtn:hover { 
+
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+
+  <div class="container">
+    <h1 style="color: rgb(157,37,69)";><center>SCHEDULES</center></h1> <br>
+<p style="color:red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*  This field must be filled</b></p>
+    <h3 style="color:Tomato;">Schedule search:</h3>
+    <p>Enter the route and date to locate schedules:</p><br>
+<table>
+     <tr>
+    <label for="schedule"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schedule display:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio"  name="schedule" required>Selected date
+    <input type="radio"  name="schedule" required>Weekly schedule
+     </tr>
+     </table><br>
+
+ <table>
+       <tr>
+     <label for="class"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*From</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select ="text" name="course" required>
+        <option>Ahmedabad</option>
+        <option>Amritsar</option>
+        <option>Aurangabad</option>
+        <option>Chandigarh</option>
+        <option>Channai</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        </select>
+          </tr><br><br>
+</table>
+
+ <table>
+       <tr>
+     <label for="class"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*To</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select ="text" name="course" required>
+        <option>Agra</option>
+        <option>Amritsar</option>
+        <option>Aurangabad</option>
+        <option>Bangaluru</option>
+        <option>Chandigarh</option>
+        <option>Channai</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Kullu</option>
+        <option>Mumbai</option>
+        <option>Kullu</option>
+       </select>
+          </tr><br><br>
+</table>
+
+<table>
+     <tr>
+    <label for="Journey"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Journey type</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio"  name="Journey" required>One way
+    <input type="radio"  name="Journey" required>Return
+     </tr>
+     </table><br>
+
+
+<table><tr>
+<label for="date"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Depart date</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="date" name="Date" required>
+</tr>
+</table><br>
+
+
+<table>
+     <tr>
+<label for="Direct"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Direct</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio"  name="Direct" required>Only show direct flights
+</tr>
+</table><br>
+
+
+<button type="clear" class="registerbtn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="clear" class="registerbtn">Search</button><br>
+
+
+    
+
+   <!-- 
+<label for="email"><b><br> E-mail</b></label><br>
+    <input type="text" placeholder="enter your mail" name="email" required>
+-->
+</div>
+
+  
+</form>
+
+</body>
+</html>

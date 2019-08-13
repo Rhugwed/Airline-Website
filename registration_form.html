@@ -1,0 +1,129 @@
+ <html>
+ <style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+   
+  position: relative;
+  top: 10;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: red;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+<div class="bg"></div>
+<div class="navbar">
+  <a href="project.html">Home</a>
+  <a href="ticket_booking_page.html">Manage Your Trips</a>
+  <a href="timetable.html">Travel Information</a>
+  <a href="special_offers.html">Special Offers</a>
+  <a href="contact.html">Contact</a>
+  
+</div>
+ <body bgcolor="grey">
+ <h1> <center>Registration Form</center></h1>
+ <form name="RegForm" onsubmit="return validate()">
+ <center><table cellspacing=12>
+ <tr>
+ <td>Name:</td>
+ <td><input type='text' size=100 name="username" pattern="[A-Za-z]{0-20}"></td></tr>
+ <tr> <td>Address:</td>
+ <td><input type='text' size=100 name='Address' ></td></tr>
+  <tr><td>E-mail Address:</td>
+ <td><input type='email' size=100 name='email'></td></tr>
+ <tr><td>Password:</td>
+ <td><input type='password' size=100 name='pass'></td></tr>
+  <tr><td>Phone No.:</td>
+ <td><input type='text' size=100 name='number' pattern="[0-9]{10}"></td></tr>
+ <tr> <td>Gender:</td>
+ <td><input type='radio'  name='gender' >Male
+	 <input	type='radio'	name='gender'>Female</td></tr>
+  <tr><td>Date:</td>
+ <td><input type='date' name='date'></td>
+ </tr>
+ <tr><td>Select your course:</td>
+ <td><select type="text" name="course">
+ <option>BE</option>
+  <option>BTech</option>
+   <option>ME</option>
+   </select>
+   </tr>
+   <tr><td><input type="submit" name="submit"></td></tr>
+ </table></center>
+ </form>
+ <script>
+ function validate()
+ {
+ var name =document.forms["RegForm"]["username"];
+ var phone =document.forms["RegForm"]["number"];
+ var  course=document.forms["RegForm"]["course"];
+ var password =document.forms["RegForm"]["pass"];
+ var address =document.forms["RegForm"]["Address"];
+ //var filter=/^([a-zA-Z0-9_\.\-
+ 
+ if(name.value == "")
+ {
+ window.alert("please enter your name.");
+ name.focus();
+ return false;
+ }
+ if(phone.value == "")
+ {
+ window.alert("please enter your number.");
+ phone.focus();
+ return false;
+ }
+ if(course.value == "")
+ {
+ window.alert("please select a course.");
+ course.focus();
+ return false;
+ }
+ if(password.value == "")
+ {
+ window.alert("please enter password.");
+ password.focus();
+ return false;
+ }
+ if(address.value == "")
+ {
+ window.alert("please enter your name.");
+ address.focus();
+ return false;
+ }
+ 
+ return true;
+ }
+ </script>
+
+</body>
+</html> 

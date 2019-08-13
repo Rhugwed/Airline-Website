@@ -1,0 +1,43 @@
+<html>
+<style>
+body { 
+background-image: url("img2.jpg");
+background-repeat: no-repeat, repeat;
+ background-size: cover;
+height: 100%;
+width: 100%;
+}
+h2{
+color: white;
+}
+
+</style>
+<body><br><br><br>
+<center><h2>User Login Panel</h2><br>
+<h4>Offers promotional "eSuperSaver Scheme" on our website.<br>This scheme is applicable for single user only, for travel in Business Class on select domestic sector in India.</h4>
+</center><center><img src="bsc.jpg" alt="Trulli" width=60% height="222" hspace="190" border="3"><br><br><br>
+<form name="scheme" onsubmit="return validate()">
+<table cellspacing=12>
+<tr><td>E-mail Address:</td>
+<td><input type="email" size=40 name="e-mail"></td></tr>
+<tr><td>Password:</td>
+<td><input type="password" size=40 name="password" placeholder="Enter Password"></td><tr>
+<tr><td><input type="submit" name="submit"></td></tr>
+</table></center>
+<script>
+function validate()
+{
+var password=document.forms["scheme"]["password"];
+
+
+if(password.value=="")
+{
+window.alert("please enter your password");
+password.focus();
+return false;
+}0
+return true;
+}
+</script>
+</body>
+</html>
